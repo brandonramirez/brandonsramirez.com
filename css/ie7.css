@@ -1,0 +1,14 @@
+#header h1 {
+	padding-top: 50px !important;
+}
+.separator {
+	margin-top: 8px !important; /*fixes the distance between the menu and the separator line in IE 7*/
+}
+
+.textbox {
+	margin-bottom: 8px;
+}
+
+#submit {	
+	padding: 4px 4px;
+}

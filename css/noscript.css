@@ -1,0 +1,18 @@
+
+#page_container {
+	height: 294px !important;
+	margin-top: 37px;
+}
+
+	.content {
+		padding-top: 0 !important;
+	}
+
+#portfolio_slider, .portfolio_content {
+	height: 238px !important;
+}	
+
+.sub_title {
+	padding-top: 10px !important;
+}
+
