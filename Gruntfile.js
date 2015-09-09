@@ -35,13 +35,28 @@ module.exports = function (grunt) {
 
         files: files
       }
+    },
+
+    imagemin: {
+      photos: {
+        files: [{
+          expand: true,
+          cwd: 'photos-src',
+          src: [ '*.jpg', '*.JPG' ],
+          dest: 'photos'
+        }]
+      }
     }
 
   });
 
   grunt.loadNpmTasks('grunt-aws-s3');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   grunt.registerTask('deploy:prod', [ 'aws_s3:prod' ]);
   grunt.registerTask('deploy:staging', [ 'aws_s3:staging' ]);
+
+  grunt.registerTask('build', [ 'imagemin' ]);
+  grunt.registerTask('default', 'build');
 
 };
