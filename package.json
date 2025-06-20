@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "repository": "git@github.com:brandonramirez/brandonsramirez.com.git",
+  "scripts": {
+    "build": "grunt build",
+    "deploy:staging": "grunt deploy:staging",
+    "deploy:prod": "grunt deploy:prod"
+  },
   "dependencies": {},
   "devDependencies": {
     "grunt": "^1.5.3",
