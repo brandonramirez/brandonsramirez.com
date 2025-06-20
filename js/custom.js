@@ -3,12 +3,7 @@ $(document).ready(function() {
 
 //NO JAVASCRIPT FIX
 	$('#page2 h2').removeClass("js_enabled"); //removes the class js_enabled for the <h2> tag inside the #gallery_page div rendering it visible
-	$('#twitter_js_disabled').hide();
-	
-	
-//CUFON
-Cufon.replace('h1, h2, h3, h4');   //replaces the font of the <h> tags with the Cufon font ('Caviar Dreams')
-
+        $('#twitter_js_disabled').hide();
 
 //INITIALIZES LIGHTBOX PLUGIN
 $('.gallery a').lightBox(); //targets every image iniside the specified selector
